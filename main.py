@@ -1,5 +1,14 @@
-import requests
-substitute = "Homer"
+num1 = float(input("Enter your first number: "))
+op = input("Enter your operator: ")
+num2 = float(input("Enter your second number: "))
 
-requests.post(
-    'https://api.telegram.org/bot5376100113:AAG45U2UdoIr4vjtrs37rUXDtf6N3TQRTEU/sendMessage?chat_id=-763937108&text=Yello %s' % substitute)
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "*":
+    print(num1 * num2)
+elif op == "/":
+    print(num1 / num2)
+else:
+    print("Invalid operation!!!")
